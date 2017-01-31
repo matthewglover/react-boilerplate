@@ -4,11 +4,11 @@ import { inc, dec } from '../../action_creators';
 import Counter from './counter';
 
 
-type CounterState = {
-  counter: number,
-};
+type Props = {
+  counter: CounterState,
+}
 
-const mapStateProps = ({ counter }: AppState): CounterState =>
+const mapStateProps = ({ counter }: AppState): Props =>
   ({ counter });
 
 

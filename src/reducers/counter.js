@@ -1,6 +1,8 @@
+// @flow
 const DEFAULT_STATE = 0;
 
-const counter = (state: number = DEFAULT_STATE, action): number => {
+
+const counter = (state: CounterState = DEFAULT_STATE, action: Action): CounterState => {
   switch (action.type) {
     case 'INC': return state + 1;
     case 'DEC': return state - 1;

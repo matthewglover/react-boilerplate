@@ -9,8 +9,10 @@
     "React$Element": true,
     "ReactClass": true,
     "Action": true,
+    "IncAction": true,
+    "DecAction": true,
     "AppState": true,
-    "AppReducer": true
+    "CounterState": true
   },
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
