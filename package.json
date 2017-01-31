@@ -5,12 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist/** && webpack --config ./build_config/webpack.production.config.js --progress -p",
-    "coverage": "nyc check-coverage --lines 100, --functions 100, --branches 100",
     "dev": "webpack-dev-server --config ./build_config/webpack.development.config.js",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
     "docs:build": "documentation build ./src/**/*.js -f md > docs/api.md",
     "lint": "eslint",
-    "precommit": "npm run lint && npm run flow && nyc npm test && npm run coverage && npm run docs:build"
+    "precommit": "npm run lint && npm run flow"
   },
   "repository": {
     "type": "git",
